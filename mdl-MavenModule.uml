@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>MODULES</ID>
+  <OriginalElement>mdl-MavenModule</OriginalElement>
+  <nodes>
+    <node x="0.0" y="315.0">mdl-MavenModule</node>
+    <node x="77.09375000000001" y="80.0">mdl-Module-Service</node>
+    <node x="0.0" y="240.0">mdl-Module-Common</node>
+    <node x="217.87847222222223" y="240.0">mdl-ModuleEntity</node>
+    <node x="124.71180555555557" y="160.0">mdl-Module-Dao</node>
+    <node x="122.2118055555556" y="0.0">mdl-Module-Web</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="mdl-Module-Service" target="mdl-ModuleEntity">
+      <point x="60.66666666666666" y="15.0" />
+      <point x="228.76041666666669" y="130.0" />
+      <point x="310.34375" y="130.0" />
+      <point x="310.34375" y="215.0" />
+      <point x="301.37847222222223" y="215.0" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Web" target="mdl-Module-Service">
+      <point x="-20.87500000000003" y="15.0" />
+      <point x="184.83680555555557" y="50.0" />
+      <point x="168.09375" y="50.0" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Service" target="mdl-Module-Dao">
+      <point x="0.0" y="15.0" />
+      <point x="168.09375" y="130.0" />
+      <point x="165.21180555555557" y="130.0" />
+      <point x="-40.5" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Dao" target="mdl-Module-Common">
+      <point x="-40.50000000000003" y="15.0" />
+      <point x="165.21180555555554" y="215.0" />
+      <point x="160.83333333333331" y="215.0" />
+      <point x="64.33333333333331" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Dao" target="mdl-ModuleEntity">
+      <point x="40.49999999999997" y="15.0" />
+      <point x="-55.666666666666664" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Service" target="mdl-Module-Common">
+      <point x="-60.66666666666666" y="15.0" />
+      <point x="107.42708333333336" y="130.0" />
+      <point x="84.53819444444446" y="130.0" />
+      <point x="84.53819444444446" y="215.0" />
+      <point x="96.5" y="215.0" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Web" target="mdl-Module-Dao">
+      <point x="20.87499999999997" y="15.0" />
+      <point x="226.58680555555557" y="60.0" />
+      <point x="269.59375" y="60.0" />
+      <point x="269.59375" y="140.0" />
+      <point x="246.21180555555557" y="140.0" />
+      <point x="40.5" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Web" target="mdl-ModuleEntity">
+      <point x="62.62499999999997" y="15.0" />
+      <point x="268.33680555555554" y="50.0" />
+      <point x="322.53819444444446" y="50.0" />
+      <point x="322.53819444444446" y="215.0" />
+      <point x="357.0451388888889" y="215.0" />
+      <point x="55.66666666666666" y="-15.0" />
+    </edge>
+    <edge source="mdl-Module-Web" target="mdl-Module-Common">
+      <point x="-62.62500000000003" y="15.0" />
+      <point x="143.08680555555557" y="50.0" />
+      <point x="51.75" y="50.0" />
+      <point x="51.75" y="215.0" />
+      <point x="32.166666666666686" y="215.0" />
+      <point x="-64.33333333333331" y="-15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="-89.0" y="44.0" />
+  <SelectedNodes>
+    <node>mdl-MavenModule</node>
+    <node>mdl-Module-Service</node>
+    <node>mdl-Module-Common</node>
+    <node>mdl-ModuleEntity</node>
+    <node>mdl-Module-Dao</node>
+    <node>mdl-Module-Web</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Libraries</Category>
+    <Category>Test dependencies</Category>
+  </Categories>
+</Diagram>
+

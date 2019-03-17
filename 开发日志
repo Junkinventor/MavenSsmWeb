@@ -1,0 +1,82 @@
+2019.3.7
+
+   Start  15：46  文件上传功能的使用
+   添加文件的上传下载  但是并不知道 将它写在工具类中还是在各个模块中进行分开，（依旧对分模块存在很大的不理解）
+
+   需要的配置：jar包 commons-fileupload
+   在SpringMvc中添加配置
+   总结：
+      1、--开发前提需要jar包
+         --SpringMvc配置文件解析器
+         --web.xml配制multipart属性
+
+      2、对上传类的理解
+       （属性）
+          文件类型：除常用的图片类型都不可上传
+          图片原名称：用于区别上传前后的文件
+          文件路径：
+
+      3、MultipartFile常用方法
+      byte[] getBytes()：获取文件数据
+      String getContentType[]：获取文件MIME类型，如image/jpeg等
+      InputStream getInputStream()：获取文件流
+      String getName()：获取表单中文件组件的名字
+      String getOriginalFilename()：获取上传文件的原名
+      Long getSize()：获取文件的字节大小，单位为byte
+      boolean isEmpty()：是否有上传文件
+      void transferTo(File dest)：将上传文件保存到一个目录文件中
+   End    18:38
+
+
+2019.3.8
+   Start  9：18   文件下载功能的使用
+   文件下载的实现简介:
+      直接在页面给出了一个超链接，该链接href的属性等于要下载文件的文件名，就可以实现文件下载了。
+
+   注意：当文件的路径中存在中文需要将它提取出来  进行编码String.getBytes
+      必须：
+           1、文件的下载地址（绝对地址）
+           2、HttpHeaders类获取到 传输的表头信息
+           3、FileUtils.readFileToByteArray 将文件中的信息转化为Byte[] 数组
+
+      问题：下载的地址需要在后台赋值  前台进行传输将使得可以读取后台的文件（虽然只有文件名）  并不该给用于太多的信息
+   End    10：26
+
+
+   Start  15：00  回忆有关Mybatis一对一，一对多，多对多的查询
+   回忆有关Mybatis的多表查询（一对一，一对多，多对一） 并在Dao、Service、Controller等模块进行练习 ??
+   End    17:20
+
+2019.3.9
+   Start  15：12   收藏模块的开发(功能相当于购物车)
+
+   要求：在有没有登录时将使用Cookie存储用户的购物内容，当登入时将直接使用Mybatis
+   连接数据库直接操作。
+
+   原因：之所以使用Cookie而不是Session是因为 Session存储在服务器中当有大量的用
+   户时对服务器的压力增加，且Session的共享问题不好解决
+
+   实现步骤：
+       1、判断用户是否登录
+       功能不全暂时停止 ....
+   End ...
+
+
+2019.3.10
+
+   Start  15：00   使用Jodd-mail小模块开发 邮件发送功能
+
+   需要了解的信息：
+       Smtp协议：邮件传输的协议
+       host：不同的邮件服务器有不同host 地址
+
+   End    16：00    邮件功能完成
+
+
+2019.3.10
+
+   Start  18：00    开始Spring Boot、Colder、Oracle的复习
+
+     详情见笔记
+
+   End    2019.3.17
